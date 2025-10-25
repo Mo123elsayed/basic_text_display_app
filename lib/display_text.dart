@@ -1,5 +1,6 @@
 import 'package:basic_text_display_app/core/routing/app_router.dart';
 import 'package:basic_text_display_app/core/routing/routes.dart';
+import 'package:basic_text_display_app/features/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class DisplayText extends StatelessWidget {
@@ -9,7 +10,7 @@ class DisplayText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: Routes.home,
+      home: HomeScreen(),
       onGenerateRoute: appRouter.generateRoute,
     );
   }
